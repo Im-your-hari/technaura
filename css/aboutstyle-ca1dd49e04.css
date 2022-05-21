@@ -1,0 +1,82 @@
+body{
+  background-color: #252525;
+}
+
+.team-heading {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 0% !important;
+  color: #ffffff;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+h4 {
+  text-align: center;
+  padding: 1rem 0 0 0;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+}
+p {
+  text-align: center;
+  color: white;
+}
+#team-wrapper {
+  width: calc(100% - 10rem);
+  margin: 0 auto 5rem auto;
+  border-radius: 3rem;
+  background-color: transparent;
+}
+div {
+  text-align: center;
+}
+
+.policy-content {
+  margin: 5rem auto;
+}
+
+@media (max-width: 576px) {
+  .policy-content {
+    padding: 0 5rem;
+  }
+  .team-heading {
+    margin-top: 45%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .team-heading {
+    margin-top: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .policy-content {
+    padding: 0 2rem;
+  }
+  .team-heading {
+    margin-top: 15%;
+  }
+}
+.text-center{
+  color: #fff;
+}
+#contact-nav{
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 500 !important;
+}
+
+#contact-copyright{
+color: black;
+}
+
+.contact-footer-a{
+  color: black
+}
