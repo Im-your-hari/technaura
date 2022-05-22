@@ -36,3 +36,5 @@ document.getElementById("frmContact").addEventListener('submit',function(e) {
     alert("Succesfully Submitted..!")
     document.getElementById('frmContact').reset()
 });
+
+//document.getElementById('frmContact')
