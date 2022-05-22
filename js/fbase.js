@@ -24,7 +24,7 @@ function submitForm(e){
 
     console.log(name + ' ' + email + ' ' + subject + ' ' + message);
     saveData(name, email, subject, message);
-
+    document.getElementById('frmContact').reset();
 
 }
 
