@@ -22,13 +22,18 @@ function submitForm(e){
     var subject = getElementVal('contact-subject');
     var message = getElementVal('contact-message');
 
-    console.log(name + ' ' + email + ' ' + subject + ' ' + message);
+    //console.log(name + ' ' + email + ' ' + subject + ' ' + message);
     saveData(name, email, subject, message);
-    document.getElementById('frmContact').reset();
-
+    document.querySelector('.popup').style.display = 'block';
+    setTimeout(()=>{
+        document.querySelector('.popup').style.display = 'none';
+    },3000);
+    
 }
 
+
 const saveData = (name, email, subject, message) => {
+    document.getElementById('frmContact').reset();
     var newContactForm = contactFormDB.push();
     newContactForm.set({
         name: name,
@@ -36,8 +41,12 @@ const saveData = (name, email, subject, message) => {
         subject: subject,
         message: message
     });
+
+    
+
 }
 
 const getElementVal = (id) =>{
     return document.getElementById(id).value;
 }
+

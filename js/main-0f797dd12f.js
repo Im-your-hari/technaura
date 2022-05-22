@@ -401,12 +401,3 @@ function init() {
   });
 
 }
-
-//firebase check 
-/*
-document.getElementById('frmContact').addEventListener('submit',contactFrm);
-
-function contactFrm(e){
-  console.log('Working');
-}
-*/

@@ -60,6 +60,15 @@
             background-color: #3299a8;
             border-color: #3299a8;
         }
+        .popup{
+            color :#3299a8;
+            width: 100%;
+            background-color: darkcyan;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 5px;
+            text-align: center;
+            display : none;
+        }
     </style>
 
 </head>
@@ -100,8 +109,8 @@
 
     <div class="form-container radius-20 ">
         <h3 class="team-heading">CONTACT</h3>
-        <div class="container " style="background-color: #3299a8;" id="popup">
-            <p id="contact-feedback" class="text-white ">Successfully submitted</p>
+        <div class="container popup" id="popup">
+            <p id="contact-feedback" style="color: rgb(63, 190, 167)">Successfully submitted</p>
         </div>
         
         <form class="bg-form" id="frmContact" action="">
@@ -119,7 +128,7 @@
                     <textarea class="form-control bg-cyan" id="contact-message" name="contact-message" placeholder="Message" required rows="5"></textarea><br>
                 </li>
                 <li>
-                    <button id="contact-button" class="btn btn-default pull-right bg-cyan" type="submit" style="background-color: #fff; color:#000;">SUBMIT</button>
+                    <button id="contact-button" class="btn btn-default pull-right bg-cyan" type="submit" style="background-color: #3299a8; color:darkcyan;">SUBMIT</button>
                 </li>
             </ul>
         </form>
