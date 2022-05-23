@@ -7,5 +7,6 @@ $(document).ready(function() {
         $('#preloader').delay(9000).queue(function() {
           $(this).remove();
         });}
+        document.querySelector(".preloader").style.display = none ;
     }, 3000);});
   
