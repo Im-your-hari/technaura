@@ -56,11 +56,41 @@
 </head>
 
 <body id="index-body">
+    <!--Preloader-->
+    <div id="preloader">
+        <div id="container" class="container-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span preloader-text="T" class="characters">T</span>
+                    
+                    <span preloader-text="E" class="characters">E</span>
+                    
+                    <span preloader-text="C" class="characters">C</span>
+                    
+                    <span preloader-text="H" class="characters">H</span>
+                    
+                    <span preloader-text="N" class="characters">N</span>
+                    
+                    <span preloader-text="A" class="characters">A</span>
+                    
+                    <span preloader-text="U" class="characters">U</span>
+                    <span preloader-text="R" class="characters">R</span>
+                    <span preloader-text="A" class="characters">A</span>
+                </div>
+            </div>	
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+
+
     <video autoplay muted loop playsinline id="videoBG" poster="img/video_bg-eddb476a3f.png">
         <source src="video.mp4" type="video/mp4">
         <!--source src="https://img.prod.wemesh.com/static/videos/bgvideo.mp4" type="video/mp4"-->
     </video>
 
+    
 
     <!--header section start-->
     <header class="header ">
@@ -149,73 +179,12 @@
     <script src="js/main-0f797dd12f.js"></script>
     <!-- <script src="js/main-0f797dd12f.js?s19rn"></script>
     <script src="js/index-6bf5eb3d05.js?s19rn"></script> -->
-    <script>
-        let appPath
-        var urlParams = new URLSearchParams(window.location.search);
-        const raveIdRegex = /[\w\d]{8}-[\w\d]{4}-[\w\d]{4}-[\w\d]{4}-[\w\d]{12}/
-        if (urlParams.get('openRaveId') && raveIdRegex.test(urlParams.get('openRaveId'))) {
-            appPath = `rave://mesh/${urlParams.get('openRaveId')}`;
-        }
-        else if(urlParams.get('openVideoUrl')) {
-            appPath = `rave://video/${encodeURIComponent(urlParams.get('openVideoUrl'))}`;
-        }
-
-        if (appPath) {
-            window.location.href = appPath
-            // window.addEventListener("mousemove", () => {
-            //     window.history.replaceState(null, '', window.location.origin + window.location.pathname)
-            // }, { once: true })
-        }
-
-        function copyUrlToClipboard(){
-            if(appPath){
-                navigator.clipboard.writeText(appPath);
-            }            
-        }
-    </script>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-60739136-3', 'auto');
-        ga('send', 'pageview');
-    </script>
+    
+    
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script>
-        // load Branch
-        (function (b, r, a, n, c, h, _, s, d, k) {
-            if (!b[n] || !b[n]._q) {
-                for (; s < _.length;) c(h, _[s++]);
-                d = r.createElement(a);
-                d.async = 1;
-                d.src = "../cdn.branch.io/branch-latest.min.js";
-                k = r.getElementsByTagName(a)[0];
-                k.parentNode.insertBefore(d, k);
-                b[n] = h
-            }
-        })(window, document, "script", "branch", function (b, r) {
-                b[r] = function () {
-                    b._q.push([r, arguments])
-                }
-            }, {
-                _q: [],
-                _v: 1
-            },
-            "addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent disableTracking"
-            .split(" "), 0);
-        // init Branch
-        branch.init('key_live_oogK5iIWCX9zJgL3vYnhFmbevCaFsf7G');
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="js/preloader.js"></script>
 </body>
 
 
