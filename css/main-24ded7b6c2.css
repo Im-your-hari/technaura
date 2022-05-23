@@ -52,10 +52,6 @@ body {
           box-sizing: border-box;
   overflow-x: hidden !important; 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background : #05091f;
   flex-direction: column;
   height: 100%;
 }
