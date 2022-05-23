@@ -1,3 +1,4 @@
+/*
 $(document).ready(function() {
     setTimeout(function() {
       $('#container').addClass('loaded');
@@ -9,4 +10,4 @@ $(document).ready(function() {
         });}
         document.querySelector(".preloader").style.display = none ;
     }, 3000);});
-  
+*/
