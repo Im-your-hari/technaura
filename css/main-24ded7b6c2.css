@@ -1009,7 +1009,7 @@ textarea {
 }
 
 
-/* Preloader */
+/* Preloader 
 .container-preloader {
 	align-items:center;
   cursor:none;
@@ -1025,14 +1025,14 @@ textarea {
 .container-preloader .animation-preloader {
 	position:absolute;
   z-index: 100;}
-/* Spinner Loading */
+/* Spinner Loading 
 .container-preloader .animation-preloader .spinner {
   animation: spinner 1s infinite linear;
 	border-radius: 50%;  border: 10px solid rgba(0, 0, 0, 0.2);
-  border-top-color: darkcyan; /* It is not in alphabetical order so that you do not overwrite it */
+  border-top-color: darkcyan; /* It is not in alphabetical order so that you do not overwrite it 
   height: 9em;  margin: 0 auto 3.5em auto; width: 9em;
 }
-/* Loading text */
+/* Loading text 
 .container-preloader .animation-preloader .txt-loading {
   font: bold 5em 'Montserrat', sans-serif;
 	text-align: center;	user-select: none;
@@ -1082,12 +1082,12 @@ textarea {
 .container-preloader .loader-section.section-right {
   right: 0;
 }
-/* Fade effect on loading animation */
+/* Fade effect on loading animation 
 .loaded .animation-preloader {
   opacity: 0;
   transition: 0.3s ease-out;
 }
-/* Curtain effect */
+/* Curtain effect 
 .loaded .loader-section.section-left {
   transform: translateX(-101%);
   transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
@@ -1096,12 +1096,12 @@ textarea {
   transform: translateX(101%);
   transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
 }
-/* Animation of the preloader */
+/* Animation of the preloader 
 @keyframes spinner {
 to {
 	transform: rotateZ(360deg);
 }}
-/* Animation of letters loading from the preloader */
+/* Animation of letters loading from the preloader 
 @keyframes characters {
   0%,
   75%,
@@ -1114,28 +1114,29 @@ to {
     opacity: 1;
     transform: rotateY(0deg);
   }}
-/* Laptop size back (laptop, tablet, cell phone) */
+/* Laptop size back (laptop, tablet, cell phone) 
 @media screen and (max-width: 767px) {
 	/* Preloader */
-	/* Spinner Loading */	
+	/* Spinner Loading 
 	.container-preloader .animation-preloader .spinner {
 	height: 8em;
 	width: 8em;
 	}
-	/* Text Loading */
+	/* Text Loading 
 	.container-preloader .animation-preloader .txt-loading {
 	  font: bold 3.5em 'Montserrat', sans-serif;
 	}}
 @media screen and (max-width: 500px) {
 	/* Prelaoder */
-	/* Spinner Loading */
+	/* Spinner Loading 
 	.container-preloader .animation-preloader .spinner {
 	height: 7em;
 	width: 7em;
 	}
-	/*Loading text */
+	/*Loading text 
 	.container-preloader .animation-preloader .txt-loading {
 	  font: bold 2em 'Montserrat', sans-serif;
 	}}
 .origin{text-decoration:none;
 font-size:45px;}
+*/
